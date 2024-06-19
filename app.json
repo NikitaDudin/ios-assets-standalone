@@ -11,8 +11,13 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "url": "https://u.expo.dev/[set-valid-app-id]" 
+    },
+    "runtimeVersion": "1.0.0",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "[set-valid-bundle-id]"
     },
     "android": {
       "adaptiveIcon": {

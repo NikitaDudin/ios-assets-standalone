@@ -10,10 +10,10 @@ export default function App() {
   useEffect(() => {
     (async () => {
       try {
-      const [asset] = await Asset.loadAsync(require('./assets/icon.png'));
+        const [asset] = await Asset.loadAsync(require('./assets/icon.png'));
 
-      const b64 = await readAsStringAsync(asset.localUri, { encoding: EncodingType.Base64 }); // error in iOS standalone app on iPhone XS and older versions. 
-      setData(b64.slice(0, 64)); // iVBORw0KGgoAAAANSUhEUgAABAAAAAQA...
+        const b64 = await readAsStringAsync(asset.localUri, { encoding: EncodingType.Base64 }); // error in iOS standalone app on iPhone XS and older versions.
+        setData(b64.slice(0, 64)); // iVBORw0KGgoAAAANSUhEUgAABAAAAAQA...
       } catch (e) {
         setError(e.message);
       }
